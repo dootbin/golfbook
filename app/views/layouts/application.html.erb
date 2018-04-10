@@ -9,6 +9,10 @@
   </head>
 
   <body>
+    <nav>
+      <%=link_to 'Home', root_url %>
+      <%=link_to 'About', controller: 'home', action: 'about' %>
+    </nav>
     <%= yield %>
   </body>
 </html>
