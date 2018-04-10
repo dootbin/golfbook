@@ -10,8 +10,10 @@
 
   <body>
     <nav>
-      <%=link_to 'Home', root_url %>
-      <%=link_to 'About', about_url %>
+      <%=link_to 'Home', root_url, {:class => "nav-link"} %>
+      <%=link_to 'About', about_url, {:class => "nav-link"} %>
+      <%=link_to 'Teams', teams_url, {:class => "nav-link"} %> 
+      <%=link_to 'Contact', contact_url, {:class => "nav-link"} %> 
     </nav>
     <%= yield %>
   </body>
